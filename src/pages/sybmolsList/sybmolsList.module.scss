@@ -1,0 +1,71 @@
+.main{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f1f1f1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: auto;
+     & > div {
+         height: 100vh;
+     }
+     .tableHeader{
+        // background-color: #fff;
+        // border-radius: 5px;
+        // border: 1px solid lightgray;
+        // margin: 2rem 2rem .5rem 2rem;
+        // padding: 1rem 4rem;
+        li  div p{
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+     }
+     .taskWraper{
+        // background-color: #fff;
+        // border-radius: 5px;
+        // border: 1px solid lightgray;
+        // margin: 1rem 2rem;
+        // padding: 2rem;
+        .ellipsis{
+            overflow: scroll;
+            white-space: nowrap;
+            // text-overflow: ellipsis;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+        }
+        li{
+            border-bottom: .1px solid #f5f0f0;
+            line-height: 3;
+            transition: .1s ease-in all;
+            a{
+                font-size: 1.2rem;
+                color: #0d6efd;
+                text-decoration: none;
+            }
+            &:hover{
+                background: #f3f4f5;
+            }
+            & > div > p{
+                font-size: 1.2rem;
+            }
+        }
+        & > div{
+            overflow-x: hidden;
+        }
+        & > div::-webkit-scrollbar{
+            width: 1rem;
+            display: none;
+        }
+        & > div::-webkit-scrollbar-thumb{
+            width:.4rem;
+            height: 1.5rem;
+            border-radius: .2rem;
+            background-color: gray;
+        }
+        & > div::-webkit-scrollbar-track{
+            border-radius: .5rem;
+            background-color: lightgray;
+        }
+     }
+}

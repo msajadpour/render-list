@@ -1,0 +1,29 @@
+.parent{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  background-color: #36363699;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  animation: lds-ripple .5s ease-in-out infinite;
+  div{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+}
+
+  @keyframes lds-ripple {
+    0% {
+      opacity: .4;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
